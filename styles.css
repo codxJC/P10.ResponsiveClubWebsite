@@ -1,0 +1,11 @@
+:root {
+    box-sizing: border-box;
+    /*Applies border box sizing to the root element*/
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    /* Tells all other elements and pseudo-elements to inherit their box sizing */
+}
