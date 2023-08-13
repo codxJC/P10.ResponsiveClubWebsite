@@ -1,73 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Salford Bootcamps Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <title>Salford Fitness & Social Club</title>
 </head>
+
 <body>
     <header>
+        <!-- ****************** -->
+        <!-- Navigation Section -->
+        <!-- ****************** -->
         <nav>
-
+            <ul>
+                <li><a class="nav-link" href="#about">
+                    <h3>About</h3>
+                </a></li>
+            <li><a class="nav-link" href="#activities">
+                    <h3>Activities</h3>
+                </a></li>
+            <li><a class="nav-link" href="#team">
+                    <h3>Our team</h3>
+                </a></li>
+            </ul>
         </nav>
         <img src="" alt="">
-        <h1>Salford Bootcamps & Social Club</h1>
+        <div id="about">
+        <h1>Salford Fitness & Social Club</h1>
         <p>Join us for fun workouts and social gatherings.</p>
         <p>Keep fit and make new friends!</p>
+        </div>
     </header>
 
     <main>
-        <section class="activities">
+
+        <!-- ****************** -->
+        <!-- Activities Section -->
+        <!-- ****************** -->
+
+        <section id="activities">
             <h2>Activities</h2>
             <p>For our meetings we rent the lounge at the local library.
                 We meet on Tuesdays and Thursdays 19:00 to 21:00 and on Sundays 17:00 to 19:00.
-                </p>
-                <p>Weather permitted we organize outdoor fun workouts on Saturdays or social gatherings at local pubs and cafes.</p>
+            </p>
+            <p>Weather permitted we organize outdoor fun workouts on Saturdays or social gatherings at local pubs and
+                cafes.</p>
 
-            <h4>Bootcamps</h4>
-            <p>Our Bootcamps are intense and fun 45min workouts. The goal is to build strength and stamina. No single bootcamp is the same, we change things all the time to keep the workouts challenging and fun.</p>
-            
-
-            <h4>Flexibility & mobility</h4>
-            <p>The bootcamp sessions are followed by 45min flexibility workouts.</p>
+            <div id="activity-wrapper">
+                <div id="bootcamps" class="">
+                    <h4>Bootcamps</h4>
+                    <p>Our Bootcamps are intense and fun 45-60min workouts. The goal is to build strength and stamina. No
+                        single bootcamp is the same, we change things all the time to keep the workouts challenging and
+                        fun.</p>
+                </div>
+                <div id="flexibility" class="">
+                    <h4>Flexibility & mobility</h4>
+                    <p>The bootcamp sessions are followed by 45-60min flexibility workouts.</p>
+                </div>
+            </div>
 
             <h4>Equipment</h4>
-            <p>We provide most of the equipment, though it is recommended to bring your own exercise mat, a towel and a bottle of water or an energy drink to stay hydrated. <br>
-            Yoga blocks are helpful for the flexibility section, but optional.</p>
+            <p>We provide most of the equipment, though it is recommended to bring your own exercise mat, a towel and a
+                bottle of water or an energy drink to stay hydrated. <br>
+                Yoga blocks are helpful for the flexibility section, but optional.</p>
+            <div id="equipment">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+
+            </div>
         </section>
 
-        <section class="events">
-            <div class="future"></div>
-            <div class="past"></div>
+        <!-- **************** -->
+        <!-- Bookings Section -->
+        <!-- **************** -->
+
+        <section id="bookings">
+            <h2>Bookings & Pricing</h2>
+            <p>Our bootcamps are very popular and the places are currently limited to 30 people per session.
+            </p>
+            <p>The price is 7£ per session* and is non refundable.</p>
+            <p>* Each session includes a bootcamp and a flexibility class.</p>
+            <div class="payment">
+                <h4>Tuesday Class </h4>
+                <h4>Thursday Class</h4>
+                <h4>Sunday Class</h4>
+                <input type="submit" id="book-now" value="Book Now!" required>
+            </div>
         </section>
 
-        <section class="bookings">
-        <h2>Bookings & Pricing</h2>
-            <p>Our bootcamps are very popular and the places are currently limited to 30 people per session. You can make a booking via our mobile app.</p>
-            <p>The price is 7£ per 2hrs session and is non refundable.</p>
-        </section>
-
-        <section class="team">
+        <section id="team">
             <h2>Our team</h2>
-            <div><h3>Bootcamps coach</h3></div>
-            <div><h3>Flexibility coach</h3></div>
+            <div id="coaches">
+                <div>
+                    <h3>Bootcamps coach</h3>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h3>Flexibility coach</h3>
+                    <img src="" alt="">
+                </div>
+            </div>
         </section>
 
-        <section class="testimonials">
+        <!-- ******************** -->
+        <!-- Testimonials Section -->
+        <!-- ******************** -->
+
+        <section id="testimonials">
             <h2>Testimonials</h2>
-            <p>This is an amazing club, the bootcamps burn a ton of calories and I've also made a few friends! - Linda</p>
-            <p>My wife convinced me to join the club and I am glad that I did! The flexibility sessions are ideal for people with sedentary lifestyles. - John</p>
-            <p>I have been a member since 2017! So it must be good! - Helen </p>
+            <div class="testimonial-wrapper">
+            <p>This is an amazing club, the bootcamps burn a ton of calories and I've also made a few friends! - Linda
+            </p>
+            </div>
+            <div class="testimonial-wrapper">
+            <p>My wife convinced me to join the club and I am glad that I did! The flexibility sessions are ideal for
+                people with sedentary lifestyles. - John</p>
+            </div>
+            <div class="testimonial-wrapper">
+            <p>I have been a member since 2017! So there must be something good about it! - Helen </p>
+            </div>
         </section>
 
     </main>
 
+    <!-- ************** -->
+    <!-- Footer Section -->
+    <!-- ************** -->
+
     <footer>
-
+        <h4>&copy;2023 Salford Fitness & Social Club All Rights Reserved </h4>
     </footer>
-    
 
-    
+
+
 </body>
+
 </html>
